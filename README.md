@@ -50,6 +50,7 @@ Chatbots can also help in collecting customer feedback.
 
 
 Technical Architecture:
+
 ![image](https://user-images.githubusercontent.com/114642451/198813920-57f40212-34bc-44d9-9d0a-6392fe1ed578.png)
 
 
