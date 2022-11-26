@@ -1,0 +1,454 @@
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>FASHION VIBE</title>
+        <style>
+         *{
+    margin: 0;
+    padding: 0;
+    font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif,'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    background: fixed;
+    
+}
+
+.footer
+{ 
+    width:100%;
+    height: 20%;
+    display:flex;
+    background:#121212;
+    margin-top: 5%;
+    color: #7DE5ED;
+    padding-left: 22%;
+    align-items: center;
+    text-align: center;
+    
+}
+.hero{
+    width: 100%;
+    height: auto;
+    background-color:#8f8f8f;
+    color: #525252;
+    
+}
+nav{
+    background: #7DE5ED;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    
+}
+.logo{
+    
+    width:200px;
+    height:50px;
+    text-decoration:none;
+    text-align: center;
+    color:#001128;
+}
+.user-pic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+nav ul{
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: rgb(252, 252, 5);
+    text-decoration: none;
+}
+.Banner
+{
+    float:left;
+    width: 100%;
+    height: 400px;
+    background-color: #121212;
+    color: #7DE5ED;
+    margin-top: 10%;
+    text-align: center;
+}
+.Bannerimg1
+{   
+    float: left;
+    width:50%;
+    height: 400px;
+    background-color: #525252;
+}
+.Bannerimg2
+{   
+    float: right;
+    width:50%;
+    height: 400px;
+    background-color: #525252;
+}
+.Adcontent
+{   
+    width:45%;
+    height: 400px;
+    margin-left: 55%;
+    color:  #7DE5ED;
+    text-align: center;
+    padding: 100px;
+}
+.Adcontent2
+{   
+    width:45%;
+    height: 400px;
+    margin-left: 5%;
+    color:  #7DE5ED;
+    text-align: center;
+    padding: 100px;
+}
+
+.columnst {
+    float:left;
+    margin-left:7%;
+    margin-top: 10%;
+    width:230px;
+    height:400px;
+    background-color:transparent;
+    border: 2px solid #74bde0;
+    border-color:transparent;
+    
+}
+.column {
+    float:left;
+    margin-left:7%;
+    margin-top: 10%;
+    width:230px;
+    height:400px;
+    background-color:transparent;
+    border: 2px solid #74bde0;
+    border-color:transparent;
+} 
+.columnend
+{
+    float:left;
+    margin-left:7%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width:230px;
+    height:400px;
+    background-color:transparent;
+    border: 2px solid #74bde0;
+    border-color:transparent;
+    
+}
+.Bottom
+{
+    height:50px;
+    width:230px;
+    text-align: center;
+    margin-top:300;
+    background: #000000e8;
+    color:  rgb(252,252,5);
+    padding: 5%;
+}
+.depimg
+{
+    float:left;
+    width:228px;
+    height:300px;
+    background-color:transparent;
+    border: 2px solid #74bde0;
+    border-color:transparent;
+
+}
+.image
+{   
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.search{
+    width: 330px;
+    margin-left: 40%;
+    color:  #7DE5ED;
+    position:fixed;
+}
+
+.srch{
+    width: 200px;
+    height: 40px;
+    background: #7DE5ED;
+    border: 2px solid #121212;
+    margin-top: 13px;
+    margin-right:13px ;
+    color: #FCE700;
+    font-size: 16px;
+    align-items: center;
+    padding: 10px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    
+}
+
+.btn{
+    width: 60px;
+    height: 40px;
+    border: 2px solid #000000dd;
+    background:#000000dd;
+    margin-top: 13px;
+    color: rgb(252, 252, 5);
+    align-items: center;
+    font-size: 15px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.btn:focus{
+    outline: none; 
+}
+
+.srch:focus{
+    outline: none;
+}
+.sub-menu-wrap{
+    position:absolute;
+    top: 100%;
+    right: 2%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    background:rgb(252, 252, 5);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8%;
+    
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h3{
+    font-weight: 500;
+}
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #525252;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0 ;
+}
+.sub-menu-link p{
+    width: 100%;
+}
+.sub-menu-link img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+.hello{
+    margin-bottom: 200px;
+    text-align: left;
+    position:absolute;
+    right: 10px;
+    
+}
+
+        </style>
+    </head>
+
+    <body>
+        
+            <nav>
+                <a class="logo" href="MadFinalhome.html"><h2>FASHION VIBE</h2></a>
+                <ul>
+                    <li><input class="srch" type="search" name="" placeholder="TYPE TO SEARCH">
+                    <a href="#"><button class="btn">SEARCH</button></a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    
+                </ul>
+                <img src="https://storagedemo-madzh.s3.jp-tok.cloud-object-storage.appdomain.cloud/images/profile.jpeg" class="user-pic" onclick="toggleMenu()">
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="https://storagedemo-madzh.s3.jp-tok.cloud-object-storage.appdomain.cloud/images/profile.jpeg">
+                            <h2>NAME</h2>
+                        </div>
+                        <hr>
+
+                        <a href="#" class="sub-menu-link">
+                            <img src="https://storagedemo-madzh.s3.jp-tok.cloud-object-storage.appdomain.cloud/images/profile.jpeg">
+                            <p>EDIT PROFILE</p>
+                            
+                        </a>
+
+                        <a href="#" class="sub-menu-link">
+                            <img src="https://storagedemo-madzh.s3.jp-tok.cloud-object-storage.appdomain.cloud/images/settings.jpeg">
+                            <p>SETTING  & PRIVACY</p>
+                            
+                        </a>
+
+                        <a href="#" class="sub-menu-link">
+                            <img src="https://storagedemo-madzh.s3.jp-tok.cloud-object-storage.appdomain.cloud/images/help.jpeg">
+                            <p>HELP</p>
+                            
+                        </a>
+
+                        <a href="/Login" class="sub-menu-link">
+                            <img src="https://cdn-icons-png.flaticon.com/512/56/56805.png">
+                            <p>LOGOUT</p>
+                            
+                        </a>
+                    </div>
+                </div>
+                 
+            </nav>
+
+        <div class="Banner"> 
+          <div class="Bannerimg1"> <img img class="image" src="fashionimagebanner.webp"></div> 
+            <div class="Adcontent">
+                <h1><br>THE JOY OF DRESSING IS AN ART.</br></h1>
+                <br>Let's have a look on it ------></br>
+            </div> 
+        </div>
+            
+        <div class="rowstart">
+            <div class="columnst"> <div class="depimg"><img class="image" src="sarees.webp"> </div> <div class="Bottom">WEDDING SAREES</div> </div>
+
+            <div class="columnst"> <div class="depimg"><img class="image" src="Salwar kameez.webp"> </div> <div class="Bottom">SALWAR KAMEEZ</div> </div>
+
+            <div class="columnst"> <div class="depimg"><img class="image" src="Kurtis.webp"> </div> <div class="Bottom">CASUAL KURTIS</div> </div>
+
+            <div class="columnst"> <div class="depimg"><img class="image" src="bridal lehenga.webp"> </div> <div class="Bottom">BRIDAL LEHENGA</div>  </div>
+        </div>
+        
+        <div class="Banner"> 
+            <div class="Bannerimg2"> <img img class="image"  src="lovablekidsattire.webp"></div> 
+            <div class="Adcontent2">
+                <h1 class="kids"><br>LOVABLE KIDS ATTIRE</br></h1>
+                <br>-------Smiles are always in FASHION-------</br>
+            </div>
+        </div>
+        
+        <div class="row">
+
+            <div class="column"> <div class="depimg"><img class="image" src="Modern vibe.webp"> </div> <div class="Bottom">MODERN VIBE</div>  </div>
+
+            <div class="column"> <div class="depimg"><img class="image" src="festivemood.webp"> </div> <div class="Bottom">FESTIVE MOOD</div>  </div>
+
+            <div class="column"> <div class="depimg"><img class="image" src="skinny dress.webp"> </div> <div class="Bottom">SKINNY DRESS</div>  </div>
+
+            <div class="column"> <div class="depimg"><img class="image" src="Max girls.webp"> </div> <div class="Bottom">MAX GIRLS</div>  </div>
+        </div>
+
+        <div class="Banner"> 
+            <div class="Bannerimg1"> <img img class="image" src="mensfashion.webp"></div> 
+            <div class="Adcontent">
+                <h1><br>HANDSOME MEN ATTIRE</br></h1>
+                <br>Always DRESS well, Keep it SIMPLE but SIGNIFICANT....</br>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column"> <div class="depimg"><img class="image" src="polo t shirts.webp"> </div> <div class="Bottom">POLO T-SHIRTS</div> </div>
+
+            <div class="column"> <div class="depimg"><img class="image" src="menhoodies.webp"> </div> <div class="Bottom">HOODIES</div>  </div>
+
+            <div class="column"> <div class="depimg"><img class="image" src="men casuals.webp"> </div> <div class="Bottom">MEN CASUALS</div>  </div>
+
+            <div class="column"> <div class="depimg"><img class="image" src="formal shirts.webp"> </div> <div class="Bottom">FORMAL SHIRTS</div>  </div>
+        </div>
+
+        <div class="Banner"> 
+            <div class="Bannerimg2"> <img class="image" src="adornments.webp"></div> 
+            <div class="Adcontent2">
+                <h1><br>PERSONAL ADORNMENTS</br></h1>
+                <br>ADORNMENT is never anything except a REFLECTION of the HEART!!!</br>
+            </div>
+        </div>
+        
+        <div class="rowend">
+        <div class="columnend"> <div class="depimg"><img class="image" src="women ornmanets.webp"> </div> <div class="Bottom">JEWELLERY</div>  </div>
+
+        <div class="columnend"> <div class="depimg"><img class="image" src="watch.jpg"> </div> <div class="Bottom">WATCHES</div>  </div>
+
+        <div class="columnend"> <div class="depimg"><img class="image" src="https://5.imimg.com/data5/TQ/NK/MY-45888708/men-belts-500x500.jpg"> </div> <div class="Bottom">BELTS</div>  </div>
+
+        <div class="columnend"> <div class="depimg"><img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSWDKgpQeZ-3VNR7-9SfaVGVvqOawrkZiLdNfSpjNNQJNI6hl8cJg0Qs_DZfpJtizUst0&usqp=CAU"> </div> <div class="Bottom">HANDBAGS & CLUTCHES</div>  </div>
+
+        </div>
+        
+
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+        window.watsonAssistantChatOptions = {
+            integrationID: "1a8c11c0-839e-4442-8b03-59f7c12ce5f5", // The ID of this integration.
+            region: "au-syd", // The region your integration is hosted in.
+            serviceInstanceID: "bada3725-51e6-42fe-bccc-3e2603433478", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+   </script>
+    </body>
+    <footer>
+        <div class="footer"> 
+            <div class="hello">
+                <a href="Feedback.html">feedback</a>
+            </div>
+            <div > 
+                <H1>THANK YOU FOR PURCHASING......WELCOME AGAIN!!!!</H1>
+            </div>
+        </div> 
+    </footer>
+</html>
