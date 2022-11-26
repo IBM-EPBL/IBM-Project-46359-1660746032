@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    *{
+        box-sizing: :border-box;
+    }
+    body{
+        background-color: #CFF5E7;
+    }
+    h2{
+        color: red;
+        font-family: sans-serif;
+        font-size: xx-large;
+    }
+    input[type=text],select,textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid red;
+        color: grey;
+        border-radius: 4px;
+        resize: vertical;
+    }
+    input[type=email],select,textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid red;
+        color:grey;
+        border-radius: 4px;
+        resize: vertical;
+    }
+    label{
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+    input[type=submit]{
+        background-color: red;
+        color:black;
+        padding: 12px 20px;
+        border none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+    input[type=submit]:hover{
+        background-color: white;
+    }
+    .container{
+        border-radius: 5px;
+        background-color:#CFF5E7;
+        color: yellowgreen;
+        padding: 20px;
+    }
+    .col-25{
+        float: left;
+        width:25%;
+        margin-top: 6px;
+        font-size: larger;
+        font-family: sans-serif;
+        font-weight:bold;
+    }
+    .col-75{
+        float:left;
+        width: 75%;
+        margin-top: 6px;
+        color:grey;
+    }
+    .row:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+</style>
+</head>
+<body>
+    <center>
+    <h2>FEEDBACK FORM</h2>
+    </center>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">FIRST NAME</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter Your name ">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">LAST NAME</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">MAIL ID</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="mailid" placeholder="Enter your mail id">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">COUNTRY</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="none">Select Country</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Canada">Canada</option>
+                        <option value="USA">USA</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Japan">Japan</option>
+                        <option value="India">India</option>
+                        <option value="China">China</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="feed_back">FEEDBACK</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" palceholder="Write something.." style="height: 200px; color: grey"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
